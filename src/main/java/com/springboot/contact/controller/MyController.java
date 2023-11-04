@@ -11,11 +11,10 @@ import com.springboot.contact.DAO.UserRepository;
 public class MyController {
 
 @Controller
-@EntityScan("com.springboot.contact.entities")
 public class HomeController {
 
 	@Autowired
-	UserRepository userRepository;
+	private UserRepository userRepository;
 	
 @GetMapping("/test")
 @ResponseBody
