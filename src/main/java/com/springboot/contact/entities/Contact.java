@@ -21,7 +21,7 @@ public class Contact {
 	private String email;
 	private String phone;
 	private String image;
-	@Column(length = 500)
+	@Column(length = 5000)
 	private String description;
 	
 	@ManyToOne	
@@ -30,10 +30,7 @@ public class Contact {
 	public int getcId() {
 		return cId;
 	}
-	public Contact() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 	public void setcId(int cId) {
 		this.cId = cId;
 	}

@@ -33,10 +33,7 @@ public class User {
 	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
 	private List<Contact> contacts=new ArrayList<>();
 	
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	public int getId() {
 		return id;
